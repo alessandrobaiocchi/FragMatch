@@ -76,7 +76,7 @@ class Pct(nn.Module):
 
         #print("feature1:", feature_1.shape)
 
-        x, masks,distr = self.pt_last(feature_1, drop_temp=drop_temp)
+        x = self.pt_last(feature_1, drop_temp=drop_temp)
         #x, masks = self.pt_last(x)
 
         #print("output SA:", x.shape)
